@@ -12,7 +12,7 @@ Images of different extensions were collected by the group members and stored in
 
 [Dataset](https://drive.google.com/drive/folders/1Py_wWGt4MmJBB37EQuHln2MLPDynNGOE)
 
-## Evaluation Matrics: 
+## Evaluation Matrices: 
 - Compression Ratio
 - PSNR using MSE
 
