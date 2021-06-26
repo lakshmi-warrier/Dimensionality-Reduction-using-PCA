@@ -6,8 +6,8 @@
 
 Reduce the size of the input image and produce all the possible images in the size-range given using different values of Principal Components(PCs)
 
-##DATASET :
-https://drive.google.com/drive/folders/1Py_wWGt4MmJBB37EQuHln2MLPDynNGOE
+##**DATASET :
+[Dataset](https://drive.google.com/drive/folders/1Py_wWGt4MmJBB37EQuHln2MLPDynNGOE)
 
 ## Evaluation Metrics: 
 - Compression Ratio
