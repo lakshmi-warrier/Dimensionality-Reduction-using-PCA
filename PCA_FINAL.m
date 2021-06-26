@@ -15,6 +15,8 @@ while condition   % loop that enables trying again (simlar to do-while loop)
     %related files there
     folderName = input("Enter the folder name you want to save the compressed images: ");
     mkdir(folderName);
+    folderName_new = "temp";
+    mkdir(folderName_new);
     
     
     %put the original image in a frame and put it to the new folder
@@ -81,8 +83,8 @@ while condition   % loop that enables trying again (simlar to do-while loop)
     title("Compressed Image")
     Image1 = getframe(gcf);
     min_compressedFileName = strcat(fName, t, ext);
-    imwrite(Image1.cdata, fullfile(folderName, min_compressedFileName));
-    comp1=dir(fullfile(folderName, min_compressedFileName));
+    imwrite(Image1.cdata, fullfile(folderName_new, min_compressedFileName));
+    comp1=dir(fullfile(folderName_new, min_compressedFileName));
     size_compressed_min = comp1.bytes;
     
     %END OF GETTING SIZE OF MAXIMUM COMPRESSED IMAGE
@@ -108,8 +110,8 @@ while condition   % loop that enables trying again (simlar to do-while loop)
     title("Compressed Image")
     Image = getframe(gcf);
     max_compressedFileName = strcat(fName, t, ext);
-    imwrite(Image.cdata, fullfile(folderName, max_compressedFileName));
-    comp=dir(fullfile(folderName, max_compressedFileName));
+    imwrite(Image.cdata, fullfile(folderName_new, max_compressedFileName));
+    comp=dir(fullfile(folderName_new, max_compressedFileName));
     size_compressed_max = comp.bytes;
     
     %END OF GETTING SIZE OF MINIMUM COMPRESSED IMAGE
@@ -153,8 +155,8 @@ while condition   % loop that enables trying again (simlar to do-while loop)
             title("Compressed Image")
             Image = getframe(gcf);
             compressedFileName = strcat(fName, t, ext);
-            imwrite(Image.cdata, fullfile(folderName, compressedFileName));
-            comp=dir(fullfile(folderName, compressedFileName));
+            imwrite(Image.cdata, fullfile(folderName_new, compressedFileName));
+            comp=dir(fullfile(folderName_new, compressedFileName));
             size_compressed = comp.bytes;
             
             %CHECKING IF THE SIZE OF COMPRESSED IMAGE IN THIS ITERATION IS WITHIN THE RANGE REQUESTED BY USER
@@ -191,6 +193,7 @@ while condition   % loop that enables trying again (simlar to do-while loop)
                 
             else if(size_compressed>range2)
                     fprintf("\n\nTotal number of images generated: "+images)
+                    rmdir(folderName_new, 's')
                     break;
                 end
             end
