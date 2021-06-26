@@ -7,6 +7,9 @@
 Reduce the size of the input image and produce all the possible images in the size-range given using different values of Principal Components(PCs)
 
 ## DATASET :
+
+Images of different extensions were collected by the group members and stored in the link below.
+
 [Dataset](https://drive.google.com/drive/folders/1Py_wWGt4MmJBB37EQuHln2MLPDynNGOE)
 
 ## Evaluation Metrics: 
@@ -19,7 +22,11 @@ User is asked to input relative path to the image file, the folder the output im
 [Slides](https://docs.google.com/presentation/d/1GE_gVrP-wXhaMUpHpJxVkEptXUN8gEk9RUe-SR9X4-U/edit?usp=sharing)
 
 ## Output Images
+
+GrayScaled, Compressed, original images have been stored  in the link below.
+
 [OutputImages](https://drive.google.com/drive/folders/1Ie-10AETKqViRmhIPUCtAh83paWYVWiC?usp=sharing)
+
 ## Group 12 Members
 
 - AM.EN.U4AIE20126	 -  GAYATHRI P
