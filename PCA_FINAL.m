@@ -4,6 +4,7 @@ while condition   % loop that enables trying again (simlar to do-while loop)
     close all;
     clc;
     
+    fprintf("\n WARNING: NAME OF THE IMAGE SHOULD BE INSIDE THE DOUBLE QUOTES (""Filename.e"")\n\n")
     filePath = input("Enter the name of image : ");
     im = imread(filePath);
     
@@ -207,6 +208,6 @@ while condition   % loop that enables trying again (simlar to do-while loop)
     wish=input("\n\nDo you want to try again ? If yes press 1 -  ");
     condition=wish==1;     %UPDATION IN CONDITION OF TOP MOST WHILE LOOP( DO WHILE TO TRY AGAIN)
     if(~condition)
-        fprintf("\n\n THANK YOU... RERUN THE PROGRAM INCASE YOU NEED TO TRY AGAIN\n")
+        fprintf("\n\n THANK YOU... RE-RUN THE PROGRAM INCASE YOU NEED TO TRY AGAIN\n")
     end
 end
