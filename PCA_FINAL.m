@@ -4,7 +4,7 @@ while condition   % loop that enables trying again (simlar to do-while loop)
     close all;
     clc;
     
-    fprintf("\n WARNING: NAME OF THE IMAGE SHOULD BE INSIDE THE DOUBLE QUOTES (""Filename.e"")\n\n")
+    fprintf("\n WARNING: NAME OF THE IMAGE SHOULD BE INSIDE THE DOUBLE QUOTES (""Filename.extension"")\n\n")
     filePath = input("Enter the name of image : ");
     im = imread(filePath);
     
